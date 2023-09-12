@@ -179,7 +179,8 @@ yod_line_graph = px.line(df_yod, x="yod", y="CCSA", title="Mean by YOD")
 yod_line_graph.update_layout(autotypenumbers="convert types")
 
 # %%
-app = dash.Dash()
+app = dash.Dash(__name__)
+server = app.server
 # %%
 app.layout = html.Div(
     children=[

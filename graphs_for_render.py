@@ -1,12 +1,9 @@
 # %%
 import pandas as pd
-import code_reference_aj as cr
 import dash
 from dash import dcc, html
 import plotly.express as px
 import datetime
-import os
-import gunicorn
 
 
 # %%
